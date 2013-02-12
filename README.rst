@@ -101,7 +101,9 @@ This will install you a complete environment with theese tools and features:
   site. This allows to easily move sites to other instances / servers later.
   This example buildout creates two mount-points: ``foo.mydomain.com`` and
   ``bar.mydomain.com``.
-- ``ftw.recipe.deployment`` - **TODO** describe logrotate etc..
+- ``ftw.recipe.deployment`` - Configures logrotate and rc-scripts for this installation.
+  Consult the `ftw.recipe.deployment readme <https://github.com/4teamwork/ftw.recipe.deployment>`_
+  for more information.
 
 You can now **start** the all necessary parts (zodb, clients) with:
 
