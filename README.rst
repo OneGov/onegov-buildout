@@ -102,6 +102,33 @@ This will install you a complete environment with theese tools and features:
   ``bar.mydomain.com``.
 - ``ftw.recipe.deployment`` - **TODO** describe logrotate etc..
 
+You can now **start** the all necessary parts (zodb, clients) with:
+
+.. code:: shell
+
+    $ bin/supervisord
+
+For showing **status** and **log files**, use:
+
+.. code:: shell
+
+    $ bin/supervisorctl
+    HttpOk1                          RUNNING    pid 1857, uptime 1 day, 1:09:36
+    HttpOk2                          RUNNING    pid 1858, uptime 1 day, 1:09:36
+    Memmon                           RUNNING    pid 1859, uptime 1 day, 1:09:36
+    instance0                        STOPPED    Not started
+    instance1                        RUNNING    pid 1862, uptime 1 day, 1:09:36
+    instance2                        RUNNING    pid 1861, uptime 1 day, 1:09:36
+    zeo                              RUNNING    pid 1860, uptime 1 day, 1:09:36
+    supervisor> fg instance1
+    ...
+
+For **stopping** it, use:
+
+.. code:: shell
+
+    $ bin/supervisorctl shutdown
+
 
 Ports
 -----
