@@ -4,6 +4,7 @@
 
 This buildout can be used for installing OneGov Box.
 
+.. contents::
 
 Usage
 =====
