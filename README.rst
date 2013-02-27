@@ -1,3 +1,20 @@
+
+----
+
+=========
+ WARNING
+=========
+
+.. parsed-literal::
+
+    Since onegov.policy, the "OneGov Box App" and its dependencies are not yet full released
+    this buildout does not work properly at the moment.
+    Please use the development installation as outlined
+    in the onegov.policy README (https://github.com/OneGov/onegov.policy#development).
+
+----
+
+
 =================
  OneGov buildout
 =================
